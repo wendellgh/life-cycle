@@ -1,0 +1,13 @@
+<section class="main">
+  <app-input [itemQueVaiSerEditado]="itemParaSerEditado">
+  </app-input>
+  <div class="container">
+    <div class="lista">
+      <h4 class="title-list">Lista de Compras</h4>
+      div
+      <div *ngFor="let item of listaCompra">
+        <app-item [item]="item" (eventoEmitidoEditar) = "editarItem($event)"></app-item>
+      </div>
+    </div>
+  </div>
+</section>
